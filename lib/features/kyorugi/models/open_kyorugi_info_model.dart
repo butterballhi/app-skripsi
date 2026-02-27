@@ -1,4 +1,4 @@
-class OpenKyorugiInfo {
+class OpenKyorugiInfoModel {
   final int id;
   final int idKategori;
   final String judul;
@@ -6,7 +6,7 @@ class OpenKyorugiInfo {
   final String teknikIlegal;
   final String aturanTambahan;
 
-  OpenKyorugiInfo({
+  OpenKyorugiInfoModel({
     required this.id,
     required this.idKategori,
     required this.judul,
@@ -16,8 +16,8 @@ class OpenKyorugiInfo {
   });
 
   /// JSON → Object
-  factory OpenKyorugiInfo.fromJson(Map<String, dynamic> json) {
-    return OpenKyorugiInfo(
+  factory OpenKyorugiInfoModel.fromJson(Map<String, dynamic> json) {
+    return OpenKyorugiInfoModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       judul: json['judul'] ?? '',

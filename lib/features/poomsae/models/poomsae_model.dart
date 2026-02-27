@@ -1,4 +1,4 @@
-class Poomsae {
+class PoomsaeModel {
   final int id;
   final int idKategori;
   final String namaEn;
@@ -15,7 +15,7 @@ class Poomsae {
   final String videoUrl;
   final String chartImage;
 
-  Poomsae({
+  PoomsaeModel({
     required this.id,
     required this.idKategori,
     required this.namaEn,
@@ -34,8 +34,8 @@ class Poomsae {
   });
 
   /// JSON → Object
-  factory Poomsae.fromJson(Map<String, dynamic> json) {
-    return Poomsae(
+  factory PoomsaeModel.fromJson(Map<String, dynamic> json) {
+    return PoomsaeModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       namaEn: json['nama_en'] ?? '',

@@ -1,4 +1,4 @@
-class Tangkisan {
+class TangkisanModel {
   final int id;
   final int idKategori;
   final String namaEn;
@@ -8,7 +8,7 @@ class Tangkisan {
   final String practicalApp;
   final String image;
 
-  Tangkisan({
+  TangkisanModel({
     required this.id,
     required this.idKategori,
     required this.namaEn,
@@ -20,8 +20,8 @@ class Tangkisan {
   });
 
   /// JSON → Object
-  factory Tangkisan.fromJson(Map<String, dynamic> json) {
-    return Tangkisan(
+  factory TangkisanModel.fromJson(Map<String, dynamic> json) {
+    return TangkisanModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       namaEn: json['nama_en'] ?? '',

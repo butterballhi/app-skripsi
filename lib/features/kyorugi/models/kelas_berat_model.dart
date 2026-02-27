@@ -1,4 +1,4 @@
-class KelasBerat {
+class KelasBeratModel {
   final int id;
   final int idKategori;
   final String judul;
@@ -7,7 +7,7 @@ class KelasBerat {
   final String hitLevelPss;
   final String image;
 
-  KelasBerat({
+  KelasBeratModel({
     required this.id,
     required this.idKategori,
     required this.judul,
@@ -18,8 +18,8 @@ class KelasBerat {
   });
 
   /// JSON → Object
-  factory KelasBerat.fromJson(Map<String, dynamic> json) {
-    return KelasBerat(
+  factory KelasBeratModel.fromJson(Map<String, dynamic> json) {
+    return KelasBeratModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       judul: json['judul'] ?? '',

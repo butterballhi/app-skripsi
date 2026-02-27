@@ -1,4 +1,4 @@
-class KyorugiInfo {
+class KyorugiInfoModel {
   final int id;
   final int idKategori;
   final String judul;
@@ -9,7 +9,7 @@ class KyorugiInfo {
   final String aturanClinch;
   final String penentuanPemenang;
 
-  KyorugiInfo({
+  KyorugiInfoModel({
     required this.id,
     required this.idKategori,
     required this.judul,
@@ -22,8 +22,8 @@ class KyorugiInfo {
   });
 
   /// JSON → Object
-  factory KyorugiInfo.fromJson(Map<String, dynamic> json) {
-    return KyorugiInfo(
+  factory KyorugiInfoModel.fromJson(Map<String, dynamic> json) {
+    return KyorugiInfoModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       judul: json['judul'] ?? '',

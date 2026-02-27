@@ -1,4 +1,4 @@
-class Tendangan {
+class TendanganModel {
   final int id;
   final int idKategori;
   final String namaEn;
@@ -8,7 +8,7 @@ class Tendangan {
   final String practicalApp;
   final String image;
 
-  Tendangan({
+  TendanganModel({
     required this.id,
     required this.idKategori,
     required this.namaEn,
@@ -20,8 +20,8 @@ class Tendangan {
   });
 
   /// JSON → Object
-  factory Tendangan.fromJson(Map<String, dynamic> json) {
-    return Tendangan(
+  factory TendanganModel.fromJson(Map<String, dynamic> json) {
+    return TendanganModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       namaEn: json['nama_en'] ?? '',

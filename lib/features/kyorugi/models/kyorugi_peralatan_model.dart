@@ -1,4 +1,4 @@
-class KyorugiPeralatan {
+class KyorugiPeralatanModel {
   final int id;
   final int idKategori;
   final String judul;
@@ -7,7 +7,7 @@ class KyorugiPeralatan {
   final String catatanSeragam;
   final String image;
 
-  KyorugiPeralatan({
+  KyorugiPeralatanModel({
     required this.id,
     required this.idKategori,
     required this.judul,
@@ -18,8 +18,8 @@ class KyorugiPeralatan {
   });
 
   /// JSON → Object
-  factory KyorugiPeralatan.fromJson(Map<String, dynamic> json) {
-    return KyorugiPeralatan(
+  factory KyorugiPeralatanModel.fromJson(Map<String, dynamic> json) {
+    return KyorugiPeralatanModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       judul: json['judul'] ?? '',

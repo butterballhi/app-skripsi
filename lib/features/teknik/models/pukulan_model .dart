@@ -1,4 +1,4 @@
-class Pukulan {
+class PukulanModel {
   final int id;
   final int idKategori;
   final String namaEn;
@@ -8,7 +8,7 @@ class Pukulan {
   final String practicalApp;
   final String image;
 
-  Pukulan({
+  PukulanModel({
     required this.id,
     required this.idKategori,
     required this.namaEn,
@@ -20,8 +20,8 @@ class Pukulan {
   });
 
   /// JSON → Object
-  factory Pukulan.fromJson(Map<String, dynamic> json) {
-    return Pukulan(
+  factory PukulanModel.fromJson(Map<String, dynamic> json) {
+    return PukulanModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       namaEn: json['nama_en'] ?? '',

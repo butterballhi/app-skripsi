@@ -1,4 +1,4 @@
-class KudaKuda {
+class KudaKudaModel {
   final int id;
   final int idKategori;
   final String namaEn;
@@ -11,7 +11,7 @@ class KudaKuda {
   final String practicalApp;
   final String image;
 
-  KudaKuda({
+  KudaKudaModel({
     required this.id,
     required this.idKategori,
     required this.namaEn,
@@ -26,8 +26,8 @@ class KudaKuda {
   });
 
   /// Factory: JSON → Object
-  factory KudaKuda.fromJson(Map<String, dynamic> json) {
-    return KudaKuda(
+  factory KudaKudaModel.fromJson(Map<String, dynamic> json) {
+    return KudaKudaModel(
       id: json['id'],
       idKategori: json['id_kategori'],
       namaEn: json['nama_en'] ?? '',
